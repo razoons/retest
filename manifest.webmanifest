@@ -2,7 +2,7 @@
   "name": "Mon Appli",
   "short_name": "MonAppli",
   "description": "Une petite PWA d’exemple",
-  "start_url": "/?source=pwa",
+  "start_url": "/retest/",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
