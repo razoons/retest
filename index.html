@@ -5,10 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Really Simple Page</title>
-  <link rel="manifest" href="/retest/manifest.webmanifest">
+  <link rel="manifest" href="./manifest.webmanifest">
   <meta name="theme-color" content="#0ea5e9">
-  <link rel="icon" href="/retest/icon-192.png" sizes="192x192">
-  <link rel="apple-touch-icon" href="/retest/icon-192.png">
+  <link rel="icon" href="./icon-192.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="./icon-192.png">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <style>
@@ -22,11 +22,12 @@
 <body>
   <h1>Hello, world!</h1>
   <p>This is a super simple HTML page.</p>
+  <button id="btn" onclick="goto()">Click me</button>
   <script>
     if ("serviceWorker" in navigator) {
       window.addEventListener("load", async () => {
         try {
-          const reg = await navigator.serviceWorker.register("/retest/service-worker.js", { scope: "/" });
+          const reg = await navigator.serviceWorker.register("./service-worker.js", { scope: "/" });
           // (optionnel) auto-update du SW
           setInterval(() => reg.update(), 60 * 60 * 1000); // toutes les heures
 
@@ -40,6 +41,9 @@
       });
     }
 
+    function goto() {
+      window.location.href = "./autre.html";
+    }
   </script>
 </body>
 
