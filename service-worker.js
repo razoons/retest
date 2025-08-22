@@ -1,13 +1,13 @@
 /* v1.0.0 */
 const CACHE_NAME = "pwa-cache-v1";
 const APP_SHELL = [
-  "/",                // si ton serveur renvoie l'index sur /
-  "/index.html",
-  "/styles.css",
-  "/app.js",
-  "/manifest.webmanifest",
-  "/icons/icon-192.png",
-  "/icons/icon-512.png"
+  "/retest/",                // si ton serveur renvoie l'index sur /
+  "/retest/index.html",
+  "/retest/styles.css",
+  "/retest/app.js",
+  "/retest/manifest.webmanifest",
+  "/retest/icon-192.png",
+  "/retest/icon-512.png"
 ];
 
 // (facultatif) page offline dédiée pour les navigations
